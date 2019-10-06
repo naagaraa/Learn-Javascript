@@ -1,0 +1,32 @@
+.buttonPesan,
+.buttonKembalian {
+    width: 60%;
+    height: 10em;
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+    color: white
+}
+
+.buttonPesan:hover,
+.buttonKembalian:hover {
+    background-color: rgb(70, 255, 101);
+    color: black;
+}
+
+.buttonPesan h3,
+.buttonKembalian h3 {
+    line-height: 5em;
+}
+
+.popupkembalian {
+    display: none;
+    position: absolute;
+    width: 50em;
+    height: 30em;
+    background-color: gray;
+    z-index: 2;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    top: 5em;
+    left: 16em;
+}

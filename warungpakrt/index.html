@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>jajanan pak rt</title>
+</head>
+
+<body>
+    <div class="popupkembalian text-center" id="popupkembalian">
+        <div class="row mt-3">
+            <div class="col">
+                <h4>Jumlah Uang : </h4>
+                <h2 id="jumlahUangPembeli"> jumlah ... </h2>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Kembalian : </h4>
+                <h2 id="jumlahKembalian"> jumlah ... </h2>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Harga beli : </h4>
+                <h2 id="jumlahHargaBeli"> jumlah ...</h2>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <button type="button" class="btn btn-primary" onclick="hide()">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Jajanan murah pak RT</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!-- button pesan -->
+        <div class="row">
+            <div class="col side-left">
+                <div class="row">
+                    <div class="col mt-5">
+                        <div class="buttonPesan" onclick="hitung()">
+                            <h3 class="text-center">Hitung Pesanan</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- button kembalian -->
+                <div class="row">
+                    <div class="col mt-5">
+                        <div class="buttonKembalian" onclick="kembalian()">
+                            <h3 class="text-center">Kembalian</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col side-right">
+                <div class="row">
+                    <div class="col">
+                        <h1>Daftar Pesanan :</h1>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <h5>jajanan</h5>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col">jumlah</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- new row -->
+                <div class="row">
+                    <div class="col">
+                        <input type="checkbox" name="tehgelas" id="tehgelas" class=" form-check-input" value="1000"> Teh
+                        gelas
+                    </div>
+                    <div class="col">
+                        <p>X</p>
+                    </div>
+                    <div class="col">
+                        <input id="jumlahTehGelas" type="number" value="0">
+                    </div>
+                </div>
+                <!-- new row -->
+                <div class="row">
+                    <div class="col">
+                        <input type="checkbox" name="permenSugus" id="permenSugus" class=" form-check-input"
+                            value="1000"> Permen Sugus
+                    </div>
+                    <div class="col">
+                        <p>X</p>
+                    </div>
+                    <div class="col">
+                        <input id="jumlahPermenSugus" type="number" value="0">
+                    </div>
+                </div>
+                <!-- new row -->
+                <div class="row">
+                    <div class="col">
+                        <input type="checkbox" name="chikiTaro" id="chikiTaro" class="form-check-input" value="1500">
+                        chiki Taro
+                        gelas
+                    </div>
+                    <div class="col">
+                        <p>X</p>
+                    </div>
+                    <div class="col">
+                        <input id="jumlahChikiTaro" type="number" value="0">
+                    </div>
+                </div>
+                <!-- new row -->
+                <div class="row">
+                    <div class="col">
+                        <input type="checkbox" name="granita" id="granita" class=" form-check-input" value="1000">
+                        Granita
+                    </div>
+                    <div class="col">
+                        <p>X</p>
+                    </div>
+                    <div class="col">
+                        <input id="jumlahGranita" type="number" value="0">
+                    </div>
+                </div>
+                <!-- keterangan -->
+                <div class="row mt-5">
+                    <h5 id="totalPesanan">Jumlah Pesanan : ...</h5>
+                </div>
+                <div class="row">
+                    <h5 id="totalHarga">Total harga : ...</h5>
+                </div>
+                <!-- box value -->
+                <div class="row">
+                    <div class="col">
+                        <input type="number" id="uangPembeli" class="form-check-input"
+                            placeholder="jumlah uang pembeli">
+                    </div>
+                    <div class="col">
+                        <p>-</p>
+                    </div>
+                    <div class="col">
+                        <input type="number" id="totalHargaFinal" class="form-check-input" placeholder="total harga"
+                            disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="js/popper.min.js">
+    </script>
+    <script src="js/bootstrap.min.js"">
+    </script>
+    <script src=" js/scripts.js"> </script> </body> </html>
